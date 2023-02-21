@@ -43,14 +43,14 @@ async function fetchImg() {
 
     totalPages = Math.ceil(API.totalHits / API.perPage);
 
-    if (images.length === 0) {
-      Notiflix.Notify.failure(
-        'Sorry, there are no images matching your search query. Please try again.'
-      );
-      clearImgCollection();
-      loadMoreBtn.hide();
-      return;
-    }
+    // if (images.length === 0) {
+    //   Notiflix.Notify.failure(
+    //     'Sorry, there are no images matching your search query. Please try again.'
+    //   );
+    //   clearImgCollection();
+    //   loadMoreBtn.hide();
+    //   return;
+    // }
 
     if (API.page > totalPages) {
       Notiflix.Notify.info(
